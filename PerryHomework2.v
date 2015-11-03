@@ -135,8 +135,6 @@ Inductive NatStack : Type :=
 | Add : nat -> NatStack -> NatStack.
 
 
-Module problem1.
-
 Definition push(sc:SC) (ns : NatStack) : NatStack :=
    match sc with 
     | Unknown => ns 
