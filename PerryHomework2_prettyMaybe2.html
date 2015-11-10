@@ -1,0 +1,3645 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="proviola.css">
+<script type="text/javascript">
+    var responses = new Array();
+    
+    function mouseover(id) {
+      response = get_response(id);
+      set_response(response);
+    };
+
+    function set_array() {
+       
+
+          i = 0;
+          data = "SC is defined	SC_rect is defined	SC_ind is defined	SC_rec is defined	";
+          responses[i]=data;
+        
+
+          i = 1;
+          data = "NatStack is defined	NatStack_rect is defined	NatStack_ind is defined	NatStack_rec is defined	";
+          responses[i]=data;
+        
+
+          i = 2;
+          data = "Interactive Module problem1 started	";
+          responses[i]=data;
+        
+
+          i = 3;
+          data = "push is defined	";
+          responses[i]=data;
+        
+
+          i = 4;
+          data = "pop is defined	";
+          responses[i]=data;
+        
+
+          i = 5;
+          data = "top is defined	";
+          responses[i]=data;
+        
+
+          i = 6;
+          data = "isEmpty is defined	";
+          responses[i]=data;
+        
+
+          i = 7;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 8;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 9;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 10;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 11;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 12;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 13;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 14;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 15;
+          data = "size is recursively defined (decreasing on 1st argument)	";
+          responses[i]=data;
+        
+
+          i = 16;
+          data = "1 subgoals, subgoal 1 (ID 15)	  	  ============================	   forall (n : nat) (ns : NatStack), push n ns <> Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 17;
+          data = "1 subgoals, subgoal 1 (ID 15)	  	  ============================	   forall (n : nat) (ns : NatStack), push n ns <> Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 18;
+          data = "1 subgoals, subgoal 1 (ID 17)	  	  n : nat	  ns : NatStack	  ============================	   push n ns <> Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 19;
+          data = "1 subgoals, subgoal 1 (ID 18)	  	  n : nat	  ns : NatStack	  ============================	   Add n ns <> Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 20;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 21;
+          data = "pushPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 22;
+          data = "1 subgoals, subgoal 1 (ID 30)	  	  ============================	   forall (n : nat) (ns : NatStack), top (push n ns) = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 23;
+          data = "1 subgoals, subgoal 1 (ID 30)	  	  ============================	   forall (n : nat) (ns : NatStack), top (push n ns) = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 24;
+          data = "1 subgoals, subgoal 1 (ID 32)	  	  n : nat	  ns : NatStack	  ============================	   top (push n ns) = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 25;
+          data = "1 subgoals, subgoal 1 (ID 33)	  	  n : nat	  ns : NatStack	  ============================	   Value n = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 26;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 27;
+          data = "pushPOST2 is defined	";
+          responses[i]=data;
+        
+
+          i = 28;
+          data = "1 subgoals, subgoal 1 (ID 39)	  	  ============================	   forall (n : nat) (ns : NatStack), pop (push n ns) = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 29;
+          data = "1 subgoals, subgoal 1 (ID 39)	  	  ============================	   forall (n : nat) (ns : NatStack), pop (push n ns) = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 30;
+          data = "1 subgoals, subgoal 1 (ID 41)	  	  n : nat	  ns : NatStack	  ============================	   pop (push n ns) = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 31;
+          data = "1 subgoals, subgoal 1 (ID 42)	  	  n : nat	  ns : NatStack	  ============================	   ns = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 32;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 33;
+          data = "pushINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 34;
+          data = "1 subgoals, subgoal 1 (ID 49)	  	  ============================	   forall ns : NatStack, ns <> Empty -> size ns = S (size (pop ns))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 35;
+          data = "1 subgoals, subgoal 1 (ID 49)	  	  ============================	   forall ns : NatStack, ns <> Empty -> size ns = S (size (pop ns))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 36;
+          data = "1 subgoals, subgoal 1 (ID 51)	  	  ns : NatStack	  H : ns <> Empty	  ============================	   size ns = S (size (pop ns))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 37;
+          data = "2 subgoals, subgoal 1 (ID 58)	  	  H : Empty <> Empty	  ============================	   size Empty = S (size (pop Empty))		subgoal 2 (ID 63) is:	 size (Add n ns) = S (size (pop (Add n ns)))		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 38;
+          data = "2 subgoals, subgoal 1 (ID 64)	  	  H : Empty <> Empty	  ============================	   Empty = Empty		subgoal 2 (ID 63) is:	 size (Add n ns) = S (size (pop (Add n ns)))		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 39;
+          data = "1 subgoals, subgoal 1 (ID 63)	  	  n : nat	  ns : NatStack	  H : Add n ns <> Empty	  IHns : ns <> Empty -> size ns = S (size (pop ns))	  ============================	   size (Add n ns) = S (size (pop (Add n ns)))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 40;
+          data = "1 subgoals, subgoal 1 (ID 66)	  	  n : nat	  ns : NatStack	  H : Add n ns <> Empty	  IHns : ns <> Empty -> size ns = S (size (pop ns))	  ============================	   S (size ns) = S (size ns)			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 41;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 42;
+          data = "popPost1 is defined	";
+          responses[i]=data;
+        
+
+          i = 43;
+          data = "1 subgoals, subgoal 1 (ID 73)	  	  ============================	   forall (ns : NatStack) (n : nat),	   top ns = Value n <-> Value n = top (pop (push n ns))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 44;
+          data = "1 subgoals, subgoal 1 (ID 73)	  	  ============================	   forall (ns : NatStack) (n : nat),	   top ns = Value n <-> Value n = top (pop (push n ns))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 45;
+          data = "2 subgoals, subgoal 1 (ID 77)	  	  ns : NatStack	  n : nat	  ============================	   top ns = Value n -> Value n = top (pop (push n ns))		subgoal 2 (ID 78) is:	 Value n = top (pop (push n ns)) -> top ns = Value n		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 46;
+          data = "2 subgoals, subgoal 1 (ID 79)	  	  ns : NatStack	  n : nat	  ============================	   top ns = Value n -> Value n = top ns		subgoal 2 (ID 78) is:	 Value n = top (pop (push n ns)) -> top ns = Value n		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 47;
+          data = "2 subgoals, subgoal 1 (ID 80)	  	  ns : NatStack	  n : nat	  H : top ns = Value n	  ============================	   Value n = top ns		subgoal 2 (ID 78) is:	 Value n = top (pop (push n ns)) -> top ns = Value n		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 48;
+          data = "2 subgoals, subgoal 1 (ID 81)	  	  ns : NatStack	  n : nat	  H : top ns = Value n	  ============================	   top ns = top ns		subgoal 2 (ID 78) is:	 Value n = top (pop (push n ns)) -> top ns = Value n		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 49;
+          data = "1 subgoals, subgoal 1 (ID 78)	  	  ns : NatStack	  n : nat	  ============================	   Value n = top (pop (push n ns)) -> top ns = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 50;
+          data = "1 subgoals, subgoal 1 (ID 83)	  	  ns : NatStack	  n : nat	  ============================	   Value n = top ns -> top ns = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 51;
+          data = "1 subgoals, subgoal 1 (ID 86)	  	  ns : NatStack	  n : nat	  H : Value n = top ns	  ============================	   Value n = top ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 52;
+          data = "1 subgoals, subgoal 1 (ID 87)	  	  ns : NatStack	  n : nat	  H : Value n = top ns	  ============================	   Value n = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 53;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 54;
+          data = "popPost2 is defined	";
+          responses[i]=data;
+        
+
+          i = 55;
+          data = "1 subgoals, subgoal 1 (ID 93)	  	  ============================	   forall (n : nat) (ns : NatStack), pop (push n ns) = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 56;
+          data = "1 subgoals, subgoal 1 (ID 93)	  	  ============================	   forall (n : nat) (ns : NatStack), pop (push n ns) = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 57;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 58;
+          data = "popINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 59;
+          data = "1 subgoals, subgoal 1 (ID 98)	  	  ============================	   forall (ns : NatStack) (n : nat), top (push n ns) = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 60;
+          data = "1 subgoals, subgoal 1 (ID 98)	  	  ============================	   forall (ns : NatStack) (n : nat), top (push n ns) = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 61;
+          data = "1 subgoals, subgoal 1 (ID 100)	  	  ns : NatStack	  n : nat	  ============================	   top (push n ns) = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 62;
+          data = "1 subgoals, subgoal 1 (ID 101)	  	  ns : NatStack	  n : nat	  ============================	   Value n = Value n			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 63;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 64;
+          data = "topPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 65;
+          data = "1 subgoals, subgoal 1 (ID 108)	  	  ============================	   forall (ns : NatStack) (n : nat), top (push n ns) = Value n -> ns = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 66;
+          data = "1 subgoals, subgoal 1 (ID 108)	  	  ============================	   forall (ns : NatStack) (n : nat), top (push n ns) = Value n -> ns = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 67;
+          data = "1 subgoals, subgoal 1 (ID 111)	  	  ns : NatStack	  n : nat	  H : top (push n ns) = Value n	  ============================	   ns = ns			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 68;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 69;
+          data = "topINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 70;
+          data = "1 subgoals, subgoal 1 (ID 119)	  	  ============================	   forall s : NatStack, isEmpty s = true <-> s = Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 71;
+          data = "1 subgoals, subgoal 1 (ID 119)	  	  ============================	   forall s : NatStack, isEmpty s = true <-> s = Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 72;
+          data = "1 subgoals, subgoal 1 (ID 120)	  	  s : NatStack	  ============================	   isEmpty s = true <-> s = Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 73;
+          data = "2 subgoals, subgoal 1 (ID 122)	  	  s : NatStack	  ============================	   isEmpty s = true -> s = Empty		subgoal 2 (ID 123) is:	 s = Empty -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 74;
+          data = "3 subgoals, subgoal 1 (ID 126)	  	  ============================	   isEmpty Empty = true -> Empty = Empty		subgoal 2 (ID 130) is:	 isEmpty (Add n s) = true -> Add n s = Empty	subgoal 3 (ID 123) is:	 s = Empty -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 75;
+          data = "3 subgoals, subgoal 1 (ID 131)	  	  ============================	   true = true -> Empty = Empty		subgoal 2 (ID 130) is:	 isEmpty (Add n s) = true -> Add n s = Empty	subgoal 3 (ID 123) is:	 s = Empty -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 76;
+          data = "3 subgoals, subgoal 1 (ID 134)	  	  H : true = true	  ============================	   Empty = Empty		subgoal 2 (ID 130) is:	 isEmpty (Add n s) = true -> Add n s = Empty	subgoal 3 (ID 123) is:	 s = Empty -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 77;
+          data = "2 subgoals, subgoal 1 (ID 130)	  	  n : nat	  s : NatStack	  IHs : isEmpty s = true -> s = Empty	  ============================	   isEmpty (Add n s) = true -> Add n s = Empty		subgoal 2 (ID 123) is:	 s = Empty -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 78;
+          data = "2 subgoals, subgoal 1 (ID 136)	  	  n : nat	  s : NatStack	  IHs : isEmpty s = true -> s = Empty	  ============================	   false = true -> Add n s = Empty		subgoal 2 (ID 123) is:	 s = Empty -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 79;
+          data = "1 subgoals, subgoal 1 (ID 123)	  	  s : NatStack	  ============================	   s = Empty -> isEmpty s = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 80;
+          data = "1 subgoals, subgoal 1 (ID 143)	  	  s : NatStack	  H : s = Empty	  ============================	   isEmpty s = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 81;
+          data = "1 subgoals, subgoal 1 (ID 144)	  	  s : NatStack	  H : s = Empty	  ============================	   isEmpty Empty = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 82;
+          data = "1 subgoals, subgoal 1 (ID 145)	  	  s : NatStack	  H : s = Empty	  ============================	   true = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 83;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 84;
+          data = "isEmptyPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 85;
+          data = "1 subgoals, subgoal 1 (ID 151)	  	  ============================	   forall s : NatStack, isEmpty s = false <-> s <> Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 86;
+          data = "1 subgoals, subgoal 1 (ID 151)	  	  ============================	   forall s : NatStack, isEmpty s = false <-> s <> Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 87;
+          data = "1 subgoals, subgoal 1 (ID 152)	  	  s : NatStack	  ============================	   isEmpty s = false <-> s <> Empty			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 88;
+          data = "2 subgoals, subgoal 1 (ID 154)	  	  s : NatStack	  ============================	   isEmpty s = false -> s <> Empty		subgoal 2 (ID 155) is:	 s <> Empty -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 89;
+          data = "2 subgoals, subgoal 1 (ID 156)	  	  s : NatStack	  H : isEmpty s = false	  ============================	   s <> Empty		subgoal 2 (ID 155) is:	 s <> Empty -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 90;
+          data = "3 subgoals, subgoal 1 (ID 163)	  	  H : isEmpty Empty = false	  ============================	   Empty <> Empty		subgoal 2 (ID 166) is:	 Add n s <> Empty	subgoal 3 (ID 155) is:	 s <> Empty -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 91;
+          data = "2 subgoals, subgoal 1 (ID 166)	  	  n : nat	  s : NatStack	  H : isEmpty (Add n s) = false	  ============================	   Add n s <> Empty		subgoal 2 (ID 155) is:	 s <> Empty -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 92;
+          data = "2 subgoals, subgoal 1 (ID 174)	  	  n : nat	  s : NatStack	  H : isEmpty (Add n s) = false	  ============================	   Add n s <> Empty		subgoal 2 (ID 155) is:	 s <> Empty -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 93;
+          data = "1 subgoals, subgoal 1 (ID 155)	  	  s : NatStack	  ============================	   s <> Empty -> isEmpty s = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 94;
+          data = "1 subgoals, subgoal 1 (ID 182)	  	  s : NatStack	  H : s <> Empty	  ============================	   isEmpty s = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 95;
+          data = "1 subgoals, subgoal 1 (ID 183)	  	  s : NatStack	  H : s <> Empty	  ============================	   match s with	   | Empty => true	   | Add _ _ => false	   end = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 96;
+          data = "2 subgoals, subgoal 1 (ID 190)	  	  H : Empty <> Empty	  ============================	   true = false		subgoal 2 (ID 193) is:	 false = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 97;
+          data = "2 subgoals, subgoal 1 (ID 194)	  	  H : Empty <> Empty	  ============================	   Empty = Empty		subgoal 2 (ID 193) is:	 false = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 98;
+          data = "1 subgoals, subgoal 1 (ID 193)	  	  n : nat	  s : NatStack	  H : Add n s <> Empty	  ============================	   false = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 99;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 100;
+          data = "isEmptyPOST2 is defined	";
+          responses[i]=data;
+        
+
+          i = 101;
+          data = "1 subgoals, subgoal 1 (ID 202)	  	  ============================	   forall s : NatStack, isEmpty s = true /\ isEmpty s = false -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 102;
+          data = "1 subgoals, subgoal 1 (ID 202)	  	  ============================	   forall s : NatStack, isEmpty s = true /\ isEmpty s = false -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 103;
+          data = "1 subgoals, subgoal 1 (ID 204)	  	  s : NatStack	  H : isEmpty s = true /\ isEmpty s = false	  ============================	   s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 104;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 105;
+          data = "isEmptyINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 106;
+          data = "s1 is defined	";
+          responses[i]=data;
+        
+
+          i = 107;
+          data = "emp is defined	";
+          responses[i]=data;
+        
+
+          i = 108;
+          data = "     = Add 2 (Add 3 Empty)	     : NatStack	";
+          responses[i]=data;
+        
+
+          i = 109;
+          data = "     = Add 3 Empty	     : NatStack	";
+          responses[i]=data;
+        
+
+          i = 110;
+          data = "     = Empty	     : NatStack	";
+          responses[i]=data;
+        
+
+          i = 111;
+          data = "     = Empty	     : NatStack	";
+          responses[i]=data;
+        
+
+          i = 112;
+          data = "Module problem1 is defined	";
+          responses[i]=data;
+        
+
+          i = 113;
+          data = "Interactive Module problem2 started	";
+          responses[i]=data;
+        
+
+          i = 114;
+          data = "SC is defined	SC_rect is defined	SC_ind is defined	SC_rec is defined	";
+          responses[i]=data;
+        
+
+          i = 115;
+          data = "Stack is defined	Stack_rect is defined	Stack_ind is defined	Stack_rec is defined	";
+          responses[i]=data;
+        
+
+          i = 116;
+          data = "     = Add nat 4 (Empty nat)	     : Stack nat	";
+          responses[i]=data;
+        
+
+          i = 117;
+          data = "push is defined	";
+          responses[i]=data;
+        
+
+          i = 118;
+          data = "pop is defined	";
+          responses[i]=data;
+        
+
+          i = 119;
+          data = "top is defined	";
+          responses[i]=data;
+        
+
+          i = 120;
+          data = "isEmpty is defined	";
+          responses[i]=data;
+        
+
+          i = 121;
+          data = "1 subgoals, subgoal 1 (ID 22)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), push t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 122;
+          data = "1 subgoals, subgoal 1 (ID 22)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), push t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 123;
+          data = "1 subgoals, subgoal 1 (ID 25)	  	  T : Type	  t : T	  s : Stack T	  ============================	   push t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 124;
+          data = "1 subgoals, subgoal 1 (ID 26)	  	  T : Type	  t : T	  s : Stack T	  ============================	   Add T t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 125;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 126;
+          data = "pushPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 127;
+          data = "1 subgoals, subgoal 1 (ID 41)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), top (push t s) = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 128;
+          data = "1 subgoals, subgoal 1 (ID 41)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), top (push t s) = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 129;
+          data = "1 subgoals, subgoal 1 (ID 44)	  	  T : Type	  t : T	  s : Stack T	  ============================	   top (push t s) = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 130;
+          data = "1 subgoals, subgoal 1 (ID 45)	  	  T : Type	  t : T	  s : Stack T	  ============================	   Value T t = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 131;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 132;
+          data = "pushPOST2 is defined	";
+          responses[i]=data;
+        
+
+          i = 133;
+          data = "1 subgoals, subgoal 1 (ID 54)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), pop (push t s) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 134;
+          data = "1 subgoals, subgoal 1 (ID 54)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), pop (push t s) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 135;
+          data = "1 subgoals, subgoal 1 (ID 57)	  	  T : Type	  t : T	  s : Stack T	  ============================	   pop (push t s) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 136;
+          data = "1 subgoals, subgoal 1 (ID 58)	  	  T : Type	  t : T	  s : Stack T	  ============================	   s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 137;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 138;
+          data = "pushINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 139;
+          data = "size is recursively defined (decreasing on 2nd argument)	";
+          responses[i]=data;
+        
+
+          i = 140;
+          data = "1 subgoals, subgoal 1 (ID 73)	  	  ============================	   forall T : Type,	   T -> forall s : Stack T, s <> Empty T -> size s = S (size (pop s))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 141;
+          data = "1 subgoals, subgoal 1 (ID 73)	  	  ============================	   forall T : Type,	   T -> forall s : Stack T, s <> Empty T -> size s = S (size (pop s))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 142;
+          data = "1 subgoals, subgoal 1 (ID 77)	  	  T : Type	  t : T	  s : Stack T	  H : s <> Empty T	  ============================	   size s = S (size (pop s))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 143;
+          data = "2 subgoals, subgoal 1 (ID 84)	  	  T : Type	  t : T	  H : Empty T <> Empty T	  ============================	   size (Empty T) = S (size (pop (Empty T)))		subgoal 2 (ID 89) is:	 size (Add T t0 s) = S (size (pop (Add T t0 s)))		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 144;
+          data = "2 subgoals, subgoal 1 (ID 90)	  	  T : Type	  t : T	  H : Empty T <> Empty T	  ============================	   Empty T = Empty T		subgoal 2 (ID 89) is:	 size (Add T t0 s) = S (size (pop (Add T t0 s)))		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 145;
+          data = "1 subgoals, subgoal 1 (ID 89)	  	  T : Type	  t : T	  t0 : T	  s : Stack T	  H : Add T t0 s <> Empty T	  IHs : s <> Empty T -> size s = S (size (pop s))	  ============================	   size (Add T t0 s) = S (size (pop (Add T t0 s)))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 146;
+          data = "1 subgoals, subgoal 1 (ID 92)	  	  T : Type	  t : T	  t0 : T	  s : Stack T	  H : Add T t0 s <> Empty T	  IHs : s <> Empty T -> size s = S (size (pop s))	  ============================	   S (size s) = S (size s)			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 147;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 148;
+          data = "popPost1 is defined	";
+          responses[i]=data;
+        
+
+          i = 149;
+          data = "1 subgoals, subgoal 1 (ID 105)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T),	   top s = Value T t <-> Value T t = top (pop (push t s))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 150;
+          data = "1 subgoals, subgoal 1 (ID 105)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T),	   top s = Value T t <-> Value T t = top (pop (push t s))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 151;
+          data = "2 subgoals, subgoal 1 (ID 110)	  	  T : Type	  t : T	  s : Stack T	  ============================	   top s = Value T t -> Value T t = top (pop (push t s))		subgoal 2 (ID 111) is:	 Value T t = top (pop (push t s)) -> top s = Value T t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 152;
+          data = "2 subgoals, subgoal 1 (ID 112)	  	  T : Type	  t : T	  s : Stack T	  ============================	   top s = Value T t -> Value T t = top s		subgoal 2 (ID 111) is:	 Value T t = top (pop (push t s)) -> top s = Value T t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 153;
+          data = "2 subgoals, subgoal 1 (ID 113)	  	  T : Type	  t : T	  s : Stack T	  H : top s = Value T t	  ============================	   Value T t = top s		subgoal 2 (ID 111) is:	 Value T t = top (pop (push t s)) -> top s = Value T t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 154;
+          data = "2 subgoals, subgoal 1 (ID 114)	  	  T : Type	  t : T	  s : Stack T	  H : top s = Value T t	  ============================	   top s = top s		subgoal 2 (ID 111) is:	 Value T t = top (pop (push t s)) -> top s = Value T t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 155;
+          data = "1 subgoals, subgoal 1 (ID 111)	  	  T : Type	  t : T	  s : Stack T	  ============================	   Value T t = top (pop (push t s)) -> top s = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 156;
+          data = "1 subgoals, subgoal 1 (ID 116)	  	  T : Type	  t : T	  s : Stack T	  ============================	   Value T t = top s -> top s = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 157;
+          data = "1 subgoals, subgoal 1 (ID 119)	  	  T : Type	  t : T	  s : Stack T	  H : Value T t = top s	  ============================	   Value T t = top s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 158;
+          data = "1 subgoals, subgoal 1 (ID 120)	  	  T : Type	  t : T	  s : Stack T	  H : Value T t = top s	  ============================	   Value T t = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 159;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 160;
+          data = "popPost2 is defined	";
+          responses[i]=data;
+        
+
+          i = 161;
+          data = "1 subgoals, subgoal 1 (ID 129)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), pop (push t s) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 162;
+          data = "1 subgoals, subgoal 1 (ID 129)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), pop (push t s) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 163;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 164;
+          data = "popINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 165;
+          data = "1 subgoals, subgoal 1 (ID 137)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T), top (push t s) = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 166;
+          data = "1 subgoals, subgoal 1 (ID 137)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T), top (push t s) = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 167;
+          data = "1 subgoals, subgoal 1 (ID 140)	  	  T : Type	  s : Stack T	  t : T	  ============================	   top (push t s) = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 168;
+          data = "1 subgoals, subgoal 1 (ID 141)	  	  T : Type	  s : Stack T	  t : T	  ============================	   Value T t = Value T t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 169;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 170;
+          data = "topPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 171;
+          data = "1 subgoals, subgoal 1 (ID 151)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T),	   top (push t s) = Value T t -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 172;
+          data = "1 subgoals, subgoal 1 (ID 151)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T),	   top (push t s) = Value T t -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 173;
+          data = "1 subgoals, subgoal 1 (ID 155)	  	  T : Type	  s : Stack T	  t : T	  H : top (push t s) = Value T t	  ============================	   s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 174;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 175;
+          data = "topINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 176;
+          data = "1 subgoals, subgoal 1 (ID 165)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = true <-> s = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 177;
+          data = "1 subgoals, subgoal 1 (ID 165)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = true <-> s = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 178;
+          data = "1 subgoals, subgoal 1 (ID 167)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = true <-> s = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 179;
+          data = "2 subgoals, subgoal 1 (ID 169)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = true -> s = Empty T		subgoal 2 (ID 170) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 180;
+          data = "3 subgoals, subgoal 1 (ID 173)	  	  T : Type	  ============================	   isEmpty (Empty T) = true -> Empty T = Empty T		subgoal 2 (ID 177) is:	 isEmpty (Add T t s) = true -> Add T t s = Empty T	subgoal 3 (ID 170) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 181;
+          data = "3 subgoals, subgoal 1 (ID 178)	  	  T : Type	  ============================	   true = true -> Empty T = Empty T		subgoal 2 (ID 177) is:	 isEmpty (Add T t s) = true -> Add T t s = Empty T	subgoal 3 (ID 170) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 182;
+          data = "3 subgoals, subgoal 1 (ID 181)	  	  T : Type	  H : true = true	  ============================	   Empty T = Empty T		subgoal 2 (ID 177) is:	 isEmpty (Add T t s) = true -> Add T t s = Empty T	subgoal 3 (ID 170) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 183;
+          data = "2 subgoals, subgoal 1 (ID 177)	  	  T : Type	  t : T	  s : Stack T	  IHs : isEmpty s = true -> s = Empty T	  ============================	   isEmpty (Add T t s) = true -> Add T t s = Empty T		subgoal 2 (ID 170) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 184;
+          data = "2 subgoals, subgoal 1 (ID 183)	  	  T : Type	  t : T	  s : Stack T	  IHs : isEmpty s = true -> s = Empty T	  ============================	   false = true -> Add T t s = Empty T		subgoal 2 (ID 170) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 185;
+          data = "1 subgoals, subgoal 1 (ID 170)	  	  T : Type	  s : Stack T	  ============================	   s = Empty T -> isEmpty s = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 186;
+          data = "1 subgoals, subgoal 1 (ID 190)	  	  T : Type	  s : Stack T	  H : s = Empty T	  ============================	   isEmpty s = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 187;
+          data = "1 subgoals, subgoal 1 (ID 191)	  	  T : Type	  s : Stack T	  H : s = Empty T	  ============================	   isEmpty (Empty T) = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 188;
+          data = "1 subgoals, subgoal 1 (ID 192)	  	  T : Type	  s : Stack T	  H : s = Empty T	  ============================	   true = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 189;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 190;
+          data = "isEmptyPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 191;
+          data = "1 subgoals, subgoal 1 (ID 200)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = false <-> s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 192;
+          data = "1 subgoals, subgoal 1 (ID 200)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = false <-> s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 193;
+          data = "1 subgoals, subgoal 1 (ID 202)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = false <-> s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 194;
+          data = "2 subgoals, subgoal 1 (ID 204)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = false -> s <> Empty T		subgoal 2 (ID 205) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 195;
+          data = "2 subgoals, subgoal 1 (ID 206)	  	  T : Type	  s : Stack T	  H : isEmpty s = false	  ============================	   s <> Empty T		subgoal 2 (ID 205) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 196;
+          data = "3 subgoals, subgoal 1 (ID 213)	  	  T : Type	  H : isEmpty (Empty T) = false	  ============================	   Empty T <> Empty T		subgoal 2 (ID 216) is:	 Add T t s <> Empty T	subgoal 3 (ID 205) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 197;
+          data = "2 subgoals, subgoal 1 (ID 216)	  	  T : Type	  t : T	  s : Stack T	  H : isEmpty (Add T t s) = false	  ============================	   Add T t s <> Empty T		subgoal 2 (ID 205) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 198;
+          data = "2 subgoals, subgoal 1 (ID 224)	  	  T : Type	  t : T	  s : Stack T	  H : isEmpty (Add T t s) = false	  ============================	   Add T t s <> Empty T		subgoal 2 (ID 205) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 199;
+          data = "1 subgoals, subgoal 1 (ID 205)	  	  T : Type	  s : Stack T	  ============================	   s <> Empty T -> isEmpty s = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 200;
+          data = "1 subgoals, subgoal 1 (ID 232)	  	  T : Type	  s : Stack T	  H : s <> Empty T	  ============================	   isEmpty s = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 201;
+          data = "1 subgoals, subgoal 1 (ID 233)	  	  T : Type	  s : Stack T	  H : s <> Empty T	  ============================	   match s with	   | Empty => true	   | Add _ _ => false	   end = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 202;
+          data = "2 subgoals, subgoal 1 (ID 240)	  	  T : Type	  H : Empty T <> Empty T	  ============================	   true = false		subgoal 2 (ID 243) is:	 false = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 203;
+          data = "2 subgoals, subgoal 1 (ID 244)	  	  T : Type	  H : Empty T <> Empty T	  ============================	   Empty T = Empty T		subgoal 2 (ID 243) is:	 false = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 204;
+          data = "1 subgoals, subgoal 1 (ID 243)	  	  T : Type	  t : T	  s : Stack T	  H : Add T t s <> Empty T	  ============================	   false = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 205;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 206;
+          data = "isEmptyPOST2 is defined	";
+          responses[i]=data;
+        
+
+          i = 207;
+          data = "1 subgoals, subgoal 1 (ID 255)	  	  ============================	   forall (T : Type) (s : Stack T),	   isEmpty s = true /\ isEmpty s = false -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 208;
+          data = "1 subgoals, subgoal 1 (ID 255)	  	  ============================	   forall (T : Type) (s : Stack T),	   isEmpty s = true /\ isEmpty s = false -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 209;
+          data = "1 subgoals, subgoal 1 (ID 258)	  	  T : Type	  s : Stack T	  H : isEmpty s = true /\ isEmpty s = false	  ============================	   s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 210;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 211;
+          data = "isEmptyINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 212;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 213;
+          data = "1 subgoals, subgoal 1 (ID 269)	  	  ============================	   forall (T : Type) (x y : T),	   pop (pop (push y (push x (Empty T)))) = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 214;
+          data = "1 subgoals, subgoal 1 (ID 269)	  	  ============================	   forall (T : Type) (x y : T),	   pop (pop (push y (push x (Empty T)))) = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 215;
+          data = "1 subgoals, subgoal 1 (ID 272)	  	  T : Type	  x : T	  y : T	  ============================	   pop (pop (push y (push x (Empty T)))) = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 216;
+          data = "1 subgoals, subgoal 1 (ID 273)	  	  T : Type	  x : T	  y : T	  ============================	   Empty T = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 217;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 218;
+          data = "prob2_3 is defined	";
+          responses[i]=data;
+        
+
+          i = 219;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 220;
+          data = "1 subgoals, subgoal 1 (ID 283)	  	  ============================	   forall (T : Type) (x : T), pop (pop (push x (Empty T))) = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 221;
+          data = "1 subgoals, subgoal 1 (ID 283)	  	  ============================	   forall (T : Type) (x : T), pop (pop (push x (Empty T))) = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 222;
+          data = "1 subgoals, subgoal 1 (ID 285)	  	  T : Type	  x : T	  ============================	   pop (pop (push x (Empty T))) = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 223;
+          data = "1 subgoals, subgoal 1 (ID 286)	  	  T : Type	  x : T	  ============================	   Empty T = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 224;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 225;
+          data = "prob2_4 is defined	";
+          responses[i]=data;
+        
+
+          i = 226;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 227;
+          data = "Module problem2 is defined	";
+          responses[i]=data;
+        
+
+          i = 228;
+          data = "Interactive Module problem3 started	";
+          responses[i]=data;
+        
+
+          i = 229;
+          data = "Stack is defined	Stack_rect is defined	Stack_ind is defined	Stack_rec is defined	";
+          responses[i]=data;
+        
+
+          i = 230;
+          data = "push is defined	";
+          responses[i]=data;
+        
+
+          i = 231;
+          data = "Notation            Scope     	\"{ x : A  |  P }\" := sig (fun x : A => P)	                      : type_scope	                      (default interpretation)		";
+          responses[i]=data;
+        
+
+          i = 232;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 233;
+          data = "1 subgoals, subgoal 1 (ID 16)	  	  T : Type	  s : Stack T	  p : s <> Empty T	  ============================	   {s' : Stack T | exists x : T, s = Add T x s'}			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 234;
+          data = "1 subgoals, subgoal 1 (ID 16)	  	  T : Type	  s : Stack T	  p : s <> Empty T	  ============================	   {s' : Stack T | exists x : T, s = Add T x s'}			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 235;
+          data = "2 subgoals, subgoal 1 (ID 23)	  	  T : Type	  p : Empty T <> Empty T	  ============================	   {s' : Stack T | exists x : T, Empty T = Add T x s'}		subgoal 2 (ID 26) is:	 {s'0 : Stack T | exists x : T, Add T e s' = Add T x s'0}		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 236;
+          data = "2 subgoals, subgoal 1 (ID 27)	  	  T : Type	  p : Empty T <> Empty T	  ============================	   Empty T = Empty T		subgoal 2 (ID 26) is:	 {s'0 : Stack T | exists x : T, Add T e s' = Add T x s'0}		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 237;
+          data = "1 subgoals, subgoal 1 (ID 26)	  	  T : Type	  e : T	  s' : Stack T	  p : Add T e s' <> Empty T	  ============================	   {s'0 : Stack T | exists x : T, Add T e s' = Add T x s'0}			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 238;
+          data = "1 subgoals, subgoal 1 (ID 30)	  	  T : Type	  e : T	  s' : Stack T	  p : Add T e s' <> Empty T	  ============================	   exists x : T, Add T e s' = Add T x s'			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 239;
+          data = "1 subgoals, subgoal 1 (ID 32)	  	  T : Type	  e : T	  s' : Stack T	  p : Add T e s' <> Empty T	  ============================	   Add T e s' = Add T e s'			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 240;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 241;
+          data = "pop is defined	";
+          responses[i]=data;
+        
+
+          i = 242;
+          data = "1 subgoals, subgoal 1 (ID 45)	  	  T : Type	  s : Stack T	  p : s <> Empty T	  ============================	   {t : T | exists s' : Stack T, s = Add T t s'}			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 243;
+          data = "1 subgoals, subgoal 1 (ID 45)	  	  T : Type	  s : Stack T	  p : s <> Empty T	  ============================	   {t : T | exists s' : Stack T, s = Add T t s'}			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 244;
+          data = "2 subgoals, subgoal 1 (ID 52)	  	  T : Type	  p : Empty T <> Empty T	  ============================	   {t : T | exists s' : Stack T, Empty T = Add T t s'}		subgoal 2 (ID 55) is:	 {t0 : T | exists s' : Stack T, Add T t s = Add T t0 s'}		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 245;
+          data = "2 subgoals, subgoal 1 (ID 56)	  	  T : Type	  p : Empty T <> Empty T	  ============================	   Empty T = Empty T		subgoal 2 (ID 55) is:	 {t0 : T | exists s' : Stack T, Add T t s = Add T t0 s'}		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 246;
+          data = "1 subgoals, subgoal 1 (ID 55)	  	  T : Type	  t : T	  s : Stack T	  p : Add T t s <> Empty T	  ============================	   {t0 : T | exists s' : Stack T, Add T t s = Add T t0 s'}			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 247;
+          data = "1 subgoals, subgoal 1 (ID 59)	  	  T : Type	  t : T	  s : Stack T	  p : Add T t s <> Empty T	  ============================	   exists s' : Stack T, Add T t s = Add T t s'			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 248;
+          data = "1 subgoals, subgoal 1 (ID 61)	  	  T : Type	  t : T	  s : Stack T	  p : Add T t s <> Empty T	  ============================	   Add T t s = Add T t s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 249;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 250;
+          data = "top is defined	";
+          responses[i]=data;
+        
+
+          i = 251;
+          data = "s1 is defined	";
+          responses[i]=data;
+        
+
+          i = 252;
+          data = "1 subgoals, subgoal 1 (ID 69)	  	  ============================	   s1 <> Empty nat			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 253;
+          data = "1 subgoals, subgoal 1 (ID 69)	  	  ============================	   s1 <> Empty nat			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 254;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 255;
+          data = "s1p is defined	";
+          responses[i]=data;
+        
+
+          i = 256;
+          data = "     = exist	         (fun t : nat =>	          exists s' : Stack nat, Add nat 3 (Empty nat) = Add nat t s') 3	         (ex_intro	            (fun s' : Stack nat => Add nat 3 (Empty nat) = Add nat 3 s')	            (Empty nat) eq_refl)	     : {t : nat | exists s' : Stack nat, s1 = Add nat t s'}	";
+          responses[i]=data;
+        
+
+          i = 257;
+          data = "isEmpty is defined	";
+          responses[i]=data;
+        
+
+          i = 258;
+          data = "1 subgoals, subgoal 1 (ID 84)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), push t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 259;
+          data = "1 subgoals, subgoal 1 (ID 84)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T), push t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 260;
+          data = "1 subgoals, subgoal 1 (ID 87)	  	  T : Type	  t : T	  s : Stack T	  ============================	   push t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 261;
+          data = "1 subgoals, subgoal 1 (ID 88)	  	  T : Type	  t : T	  s : Stack T	  ============================	   Add T t s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 262;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 263;
+          data = "pushPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 264;
+          data = "1 subgoals, subgoal 1 (ID 107)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T),	   proj1_sig (top (push t s) p) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 265;
+          data = "1 subgoals, subgoal 1 (ID 107)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T),	   proj1_sig (top (push t s) p) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 266;
+          data = "1 subgoals, subgoal 1 (ID 111)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  ============================	   proj1_sig (top (push t s) p) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 267;
+          data = "1 subgoals, subgoal 1 (ID 112)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  ============================	   t = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 268;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 269;
+          data = "pushPOST2 is defined	";
+          responses[i]=data;
+        
+
+          i = 270;
+          data = "1 subgoals, subgoal 1 (ID 126)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T),	   proj1_sig (pop (push t s) p) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 271;
+          data = "1 subgoals, subgoal 1 (ID 126)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T),	   proj1_sig (pop (push t s) p) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 272;
+          data = "1 subgoals, subgoal 1 (ID 130)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  ============================	   proj1_sig (pop (push t s) p) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 273;
+          data = "1 subgoals, subgoal 1 (ID 131)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  ============================	   s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 274;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 275;
+          data = "pushINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 276;
+          data = "size is recursively defined (decreasing on 2nd argument)	";
+          responses[i]=data;
+        
+
+          i = 277;
+          data = "1 subgoals, subgoal 1 (ID 149)	  	  ============================	   forall T : Type,	   T ->	   forall (s : Stack T) (p : s <> Empty T),	   size s = S (size (proj1_sig (pop s p)))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 278;
+          data = "1 subgoals, subgoal 1 (ID 149)	  	  ============================	   forall T : Type,	   T ->	   forall (s : Stack T) (p : s <> Empty T),	   size s = S (size (proj1_sig (pop s p)))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 279;
+          data = "1 subgoals, subgoal 1 (ID 153)	  	  T : Type	  t : T	  s : Stack T	  p : s <> Empty T	  ============================	   size s = S (size (proj1_sig (pop s p)))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 280;
+          data = "2 subgoals, subgoal 1 (ID 160)	  	  T : Type	  t : T	  p : Empty T <> Empty T	  ============================	   size (Empty T) = S (size (proj1_sig (pop (Empty T) p)))		subgoal 2 (ID 165) is:	 size (Add T t0 s) = S (size (proj1_sig (pop (Add T t0 s) p)))		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 281;
+          data = "2 subgoals, subgoal 1 (ID 166)	  	  T : Type	  t : T	  p : Empty T <> Empty T	  ============================	   Empty T = Empty T		subgoal 2 (ID 165) is:	 size (Add T t0 s) = S (size (proj1_sig (pop (Add T t0 s) p)))		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 282;
+          data = "1 subgoals, subgoal 1 (ID 165)	  	  T : Type	  t : T	  t0 : T	  s : Stack T	  p : Add T t0 s <> Empty T	  IHs : forall p0 : s <> Empty T, size s = S (size (proj1_sig (pop s p0)))	  ============================	   size (Add T t0 s) = S (size (proj1_sig (pop (Add T t0 s) p)))			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 283;
+          data = "1 subgoals, subgoal 1 (ID 168)	  	  T : Type	  t : T	  t0 : T	  s : Stack T	  p : Add T t0 s <> Empty T	  IHs : forall p0 : s <> Empty T, size s = S (size (proj1_sig (pop s p0)))	  ============================	   S (size s) = S (size s)			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 284;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 285;
+          data = "popPost1 is defined	";
+          responses[i]=data;
+        
+
+          i = 286;
+          data = "1 subgoals, subgoal 1 (ID 190)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T)	     (p2 : s <> Empty T),	   proj1_sig (top s p2) = t <->	   t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2)			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 287;
+          data = "1 subgoals, subgoal 1 (ID 190)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T)	     (p2 : s <> Empty T),	   proj1_sig (top s p2) = t <->	   t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2)			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 288;
+          data = "2 subgoals, subgoal 1 (ID 197)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  ============================	   proj1_sig (top s p2) = t ->	   t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2)		subgoal 2 (ID 198) is:	 t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2) ->	 proj1_sig (top s p2) = t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 289;
+          data = "2 subgoals, subgoal 1 (ID 199)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  ============================	   proj1_sig (top s p2) = t -> t = proj1_sig (top s p2)		subgoal 2 (ID 198) is:	 t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2) ->	 proj1_sig (top s p2) = t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 290;
+          data = "2 subgoals, subgoal 1 (ID 200)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  H : proj1_sig (top s p2) = t	  ============================	   t = proj1_sig (top s p2)		subgoal 2 (ID 198) is:	 t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2) ->	 proj1_sig (top s p2) = t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 291;
+          data = "2 subgoals, subgoal 1 (ID 201)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  H : proj1_sig (top s p2) = t	  ============================	   proj1_sig (top s p2) = proj1_sig (top s p2)		subgoal 2 (ID 198) is:	 t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2) ->	 proj1_sig (top s p2) = t		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 292;
+          data = "1 subgoals, subgoal 1 (ID 198)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  ============================	   t = proj1_sig (top (proj1_sig (pop (push t s) p)) p2) ->	   proj1_sig (top s p2) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 293;
+          data = "1 subgoals, subgoal 1 (ID 203)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  ============================	   t = proj1_sig (top s p2) -> proj1_sig (top s p2) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 294;
+          data = "1 subgoals, subgoal 1 (ID 206)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  H : t = proj1_sig (top s p2)	  ============================	   t = proj1_sig (top s p2)			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 295;
+          data = "1 subgoals, subgoal 1 (ID 207)	  	  T : Type	  t : T	  s : Stack T	  p : push t s <> Empty T	  p2 : s <> Empty T	  H : t = proj1_sig (top s p2)	  ============================	   t = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 296;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 297;
+          data = "popPost2 is defined	";
+          responses[i]=data;
+        
+
+          i = 298;
+          data = "1 subgoals, subgoal 1 (ID 222)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T),	   proj1_sig (pop (push t s) p) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 299;
+          data = "1 subgoals, subgoal 1 (ID 222)	  	  ============================	   forall (T : Type) (t : T) (s : Stack T) (p : push t s <> Empty T),	   proj1_sig (pop (push t s) p) = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 300;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 301;
+          data = "popINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 302;
+          data = "1 subgoals, subgoal 1 (ID 235)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T) (p : push t s <> Empty T),	   proj1_sig (top (push t s) p) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 303;
+          data = "1 subgoals, subgoal 1 (ID 235)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T) (p : push t s <> Empty T),	   proj1_sig (top (push t s) p) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 304;
+          data = "1 subgoals, subgoal 1 (ID 239)	  	  T : Type	  s : Stack T	  t : T	  p : push t s <> Empty T	  ============================	   proj1_sig (top (push t s) p) = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 305;
+          data = "1 subgoals, subgoal 1 (ID 240)	  	  T : Type	  s : Stack T	  t : T	  p : push t s <> Empty T	  ============================	   t = t			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 306;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 307;
+          data = "topPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 308;
+          data = "1 subgoals, subgoal 1 (ID 255)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T) (p : push t s <> Empty T),	   proj1_sig (top (push t s) p) = t -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 309;
+          data = "1 subgoals, subgoal 1 (ID 255)	  	  ============================	   forall (T : Type) (s : Stack T) (t : T) (p : push t s <> Empty T),	   proj1_sig (top (push t s) p) = t -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 310;
+          data = "1 subgoals, subgoal 1 (ID 260)	  	  T : Type	  s : Stack T	  t : T	  p : push t s <> Empty T	  H : proj1_sig (top (push t s) p) = t	  ============================	   s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 311;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 312;
+          data = "topINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 313;
+          data = "1 subgoals, subgoal 1 (ID 271)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = true <-> s = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 314;
+          data = "1 subgoals, subgoal 1 (ID 271)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = true <-> s = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 315;
+          data = "1 subgoals, subgoal 1 (ID 273)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = true <-> s = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 316;
+          data = "2 subgoals, subgoal 1 (ID 275)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = true -> s = Empty T		subgoal 2 (ID 276) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 317;
+          data = "3 subgoals, subgoal 1 (ID 279)	  	  T : Type	  ============================	   isEmpty (Empty T) = true -> Empty T = Empty T		subgoal 2 (ID 283) is:	 isEmpty (Add T t s) = true -> Add T t s = Empty T	subgoal 3 (ID 276) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 318;
+          data = "3 subgoals, subgoal 1 (ID 284)	  	  T : Type	  ============================	   true = true -> Empty T = Empty T		subgoal 2 (ID 283) is:	 isEmpty (Add T t s) = true -> Add T t s = Empty T	subgoal 3 (ID 276) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 319;
+          data = "3 subgoals, subgoal 1 (ID 287)	  	  T : Type	  H : true = true	  ============================	   Empty T = Empty T		subgoal 2 (ID 283) is:	 isEmpty (Add T t s) = true -> Add T t s = Empty T	subgoal 3 (ID 276) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 320;
+          data = "2 subgoals, subgoal 1 (ID 283)	  	  T : Type	  t : T	  s : Stack T	  IHs : isEmpty s = true -> s = Empty T	  ============================	   isEmpty (Add T t s) = true -> Add T t s = Empty T		subgoal 2 (ID 276) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 321;
+          data = "2 subgoals, subgoal 1 (ID 289)	  	  T : Type	  t : T	  s : Stack T	  IHs : isEmpty s = true -> s = Empty T	  ============================	   false = true -> Add T t s = Empty T		subgoal 2 (ID 276) is:	 s = Empty T -> isEmpty s = true		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 322;
+          data = "1 subgoals, subgoal 1 (ID 276)	  	  T : Type	  s : Stack T	  ============================	   s = Empty T -> isEmpty s = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 323;
+          data = "1 subgoals, subgoal 1 (ID 296)	  	  T : Type	  s : Stack T	  H : s = Empty T	  ============================	   isEmpty s = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 324;
+          data = "1 subgoals, subgoal 1 (ID 297)	  	  T : Type	  s : Stack T	  H : s = Empty T	  ============================	   isEmpty (Empty T) = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 325;
+          data = "1 subgoals, subgoal 1 (ID 298)	  	  T : Type	  s : Stack T	  H : s = Empty T	  ============================	   true = true			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 326;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 327;
+          data = "isEmptyPOST1 is defined	";
+          responses[i]=data;
+        
+
+          i = 328;
+          data = "1 subgoals, subgoal 1 (ID 306)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = false <-> s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 329;
+          data = "1 subgoals, subgoal 1 (ID 306)	  	  ============================	   forall (T : Type) (s : Stack T), isEmpty s = false <-> s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 330;
+          data = "1 subgoals, subgoal 1 (ID 308)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = false <-> s <> Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 331;
+          data = "2 subgoals, subgoal 1 (ID 310)	  	  T : Type	  s : Stack T	  ============================	   isEmpty s = false -> s <> Empty T		subgoal 2 (ID 311) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 332;
+          data = "2 subgoals, subgoal 1 (ID 312)	  	  T : Type	  s : Stack T	  H : isEmpty s = false	  ============================	   s <> Empty T		subgoal 2 (ID 311) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 333;
+          data = "3 subgoals, subgoal 1 (ID 319)	  	  T : Type	  H : isEmpty (Empty T) = false	  ============================	   Empty T <> Empty T		subgoal 2 (ID 322) is:	 Add T t s <> Empty T	subgoal 3 (ID 311) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 334;
+          data = "2 subgoals, subgoal 1 (ID 322)	  	  T : Type	  t : T	  s : Stack T	  H : isEmpty (Add T t s) = false	  ============================	   Add T t s <> Empty T		subgoal 2 (ID 311) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 335;
+          data = "2 subgoals, subgoal 1 (ID 330)	  	  T : Type	  t : T	  s : Stack T	  H : isEmpty (Add T t s) = false	  ============================	   Add T t s <> Empty T		subgoal 2 (ID 311) is:	 s <> Empty T -> isEmpty s = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 336;
+          data = "1 subgoals, subgoal 1 (ID 311)	  	  T : Type	  s : Stack T	  ============================	   s <> Empty T -> isEmpty s = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 337;
+          data = "1 subgoals, subgoal 1 (ID 338)	  	  T : Type	  s : Stack T	  H : s <> Empty T	  ============================	   isEmpty s = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 338;
+          data = "1 subgoals, subgoal 1 (ID 339)	  	  T : Type	  s : Stack T	  H : s <> Empty T	  ============================	   match s with	   | Empty => true	   | Add _ _ => false	   end = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 339;
+          data = "2 subgoals, subgoal 1 (ID 346)	  	  T : Type	  H : Empty T <> Empty T	  ============================	   true = false		subgoal 2 (ID 349) is:	 false = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 340;
+          data = "2 subgoals, subgoal 1 (ID 350)	  	  T : Type	  H : Empty T <> Empty T	  ============================	   Empty T = Empty T		subgoal 2 (ID 349) is:	 false = false		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 341;
+          data = "1 subgoals, subgoal 1 (ID 349)	  	  T : Type	  t : T	  s : Stack T	  H : Add T t s <> Empty T	  ============================	   false = false			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 342;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 343;
+          data = "isEmptyPOST2 is defined	";
+          responses[i]=data;
+        
+
+          i = 344;
+          data = "1 subgoals, subgoal 1 (ID 361)	  	  ============================	   forall (T : Type) (s : Stack T),	   isEmpty s = true /\ isEmpty s = false -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 345;
+          data = "1 subgoals, subgoal 1 (ID 361)	  	  ============================	   forall (T : Type) (s : Stack T),	   isEmpty s = true /\ isEmpty s = false -> s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 346;
+          data = "1 subgoals, subgoal 1 (ID 364)	  	  T : Type	  s : Stack T	  H : isEmpty s = true /\ isEmpty s = false	  ============================	   s = s			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 347;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 348;
+          data = "isEmptyINVARIANT1 is defined	";
+          responses[i]=data;
+        
+
+          i = 349;
+          data = "constructable is defined	";
+          responses[i]=data;
+        
+
+          i = 350;
+          data = "1 subgoals, subgoal 1 (ID 387)	  	  ============================	   forall (T : Type) (x : T),	   Stack T ->	   forall (p1 : push x (Empty T) <> Empty T)	     (p2 : proj1_sig (pop (push x (Empty T)) p1) <> Empty T),	   constructable T	     (proj1_sig (pop (proj1_sig (pop (push x (Empty T)) p1)) p2)) -> False			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 351;
+          data = "1 subgoals, subgoal 1 (ID 387)	  	  ============================	   forall (T : Type) (x : T),	   Stack T ->	   forall (p1 : push x (Empty T) <> Empty T)	     (p2 : proj1_sig (pop (push x (Empty T)) p1) <> Empty T),	   constructable T	     (proj1_sig (pop (proj1_sig (pop (push x (Empty T)) p1)) p2)) -> False			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 352;
+          data = "1 subgoals, subgoal 1 (ID 393)	  	  T : Type	  x : T	  s : Stack T	  p1 : push x (Empty T) <> Empty T	  p2 : proj1_sig (pop (push x (Empty T)) p1) <> Empty T	  H : constructable T	        (proj1_sig (pop (proj1_sig (pop (push x (Empty T)) p1)) p2))	  ============================	   False			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 353;
+          data = "1 subgoals, subgoal 1 (ID 394)	  	  T : Type	  x : T	  s : Stack T	  p1 : push x (Empty T) <> Empty T	  p2 : Empty T <> Empty T	  H : constructable T	        (proj1_sig (pop (proj1_sig (pop (push x (Empty T)) p1)) p2))	  ============================	   False			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 354;
+          data = "1 subgoals, subgoal 1 (ID 395)	  	  T : Type	  x : T	  s : Stack T	  p1 : push x (Empty T) <> Empty T	  p2 : Empty T <> Empty T	  H : constructable T	        (proj1_sig (pop (proj1_sig (pop (push x (Empty T)) p1)) p2))	  ============================	   Empty T = Empty T			(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 355;
+          data = "No more subgoals.		(dependent evars:)	";
+          responses[i]=data;
+        
+
+          i = 356;
+          data = "neverEver is defined	";
+          responses[i]=data;
+        
+
+          i = 357;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 358;
+          data = "Module problem3 is defined	";
+          responses[i]=data;
+        
+
+          i = 359;
+          data = "";
+          responses[i]=data;
+        
+
+          i = 360;
+          data = "The file problem3_subsetTypes.hs has been created by extraction.	";
+          responses[i]=data;
+        
+
+          i = 361;
+          data = "";
+          responses[i]=data;
+        
+    };
+
+    function get_response(id) {
+      return responses[id];
+    };
+  
+    function set_response(response) {
+      goalSpan =  document.getElementById("goal").getElementsByTagName("span")[0];
+      goalSpan.innerHTML = response.replace(/	/g, '\n');
+    };
+  </script>
+</head>
+<body onload="set_array()">
+<div class="commands"><pre><span class="command" onmouseover="
+        mouseover(
+          0
+        )
+        ">
+
+
+Inductive SC : Type :=
+| Value : nat -&gt; SC
+| Unknown : SC.</span><span class="command" onmouseover="
+        mouseover(
+          1
+        )
+        ">
+
+Inductive NatStack : Type :=
+| Empty : NatStack
+| Add : nat -&gt; NatStack -&gt; NatStack.</span><span class="command" onmouseover="
+        mouseover(
+          2
+        )
+        ">
+
+
+Module problem1.</span><span class="command" onmouseover="
+        mouseover(
+          3
+        )
+        ">
+
+Definition push(n:nat) (ns : NatStack) : NatStack :=
+   Add n ns.</span><span class="command" onmouseover="
+        mouseover(
+          4
+        )
+        ">
+
+Definition pop(ns : NatStack) : NatStack :=
+   match ns with
+    | Empty =&gt; Empty 
+    | Add _ ns' =&gt; ns' 
+   end.</span><span class="command" onmouseover="
+        mouseover(
+          5
+        )
+        ">
+
+Definition top (ns:NatStack):SC :=
+   match ns with 
+    | Empty =&gt; Unknown
+    | Add x _ =&gt; Value x
+   end.</span><span class="command" onmouseover="
+        mouseover(
+          6
+        )
+        "> 
+
+Definition isEmpty(ns : NatStack) : bool :=
+   match ns with 
+    | Empty =&gt; true
+    | Add _ _ =&gt; false
+   end.</span><span class="command" onmouseover="
+        mouseover(
+          7
+        )
+        ">
+
+
+(* push 
+
+PRECONDITIONS:
+      true *)</span><span class="command" onmouseover="
+        mouseover(
+          8
+        )
+        ">(*
+POSTCONDITIONS:
+     1.  forall n : nat and ns : NatStack, push n ns &lt;&gt; Empty          
+     2.  n is on top of (push n ns) forall ns.
+             n = top (push n ns)
+
+  INVARIANTS:
+     1. All elements 'below' the newly pushed object remain unchanged.
+         pop (push n ns) = ns *)</span><span class="command" onmouseover="
+        mouseover(
+          9
+        )
+        ">
+
+
+(* pop 
+
+PRECONDITIONS:
+      true*)</span><span class="command" onmouseover="
+        mouseover(
+          10
+        )
+        ">(*
+POSTCONDITIONS:
+     1.  if ns&lt;&gt;Empty, then |ns| = |pop ns| + 1
+     2.  top (pop (push n ns)) = n iff top ns = n 
+  INVARIANTS:
+     1. All elements 'below' the newly removed object remain unchanged.
+         pop (push n ns) = ns 
+*)</span><span class="command" onmouseover="
+        mouseover(
+          11
+        )
+        ">
+
+
+(* top 
+
+PRECONDITIONS:
+      true *)</span><span class="command" onmouseover="
+        mouseover(
+          12
+        )
+        ">(*
+POSTCONDITIONS:
+     1.  top (push n ns) = Value n 
+
+  INVARIANTS:
+     1. ns is unchanged. 
+*)</span><span class="command" onmouseover="
+        mouseover(
+          13
+        )
+        ">
+
+
+(* isEmpty
+PRECONDITIONS:
+      true*)</span><span class="command" onmouseover="
+        mouseover(
+          14
+        )
+        ">(*
+POSTCONDITIONS:
+     1.  empty &lt;==&gt; true 
+     2.  push n ns &lt;==&gt; false
+
+  INVARIANTS:
+     1. ns is unchanged.
+*)</span><span class="command" onmouseover="
+        mouseover(
+          15
+        )
+        ">
+
+Fixpoint size(ns:NatStack) : nat :=
+  match ns with 
+    | Empty =&gt; O
+    | Add _ ns' =&gt; S (size ns')
+  end.</span><span class="command" onmouseover="
+        mouseover(
+          16
+        )
+        ">
+
+Theorem pushPOST1 : forall n :nat, forall ns:NatStack, push n ns &lt;&gt; Empty.</span><span class="command" onmouseover="
+        mouseover(
+          17
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          18
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          19
+        )
+        "> unfold push.</span><span class="command" onmouseover="
+        mouseover(
+          20
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          21
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          22
+        )
+        ">
+Theorem pushPOST2 : forall n : nat, forall ns:NatStack, top (push n ns) = Value n.</span><span class="command" onmouseover="
+        mouseover(
+          23
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          24
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          25
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          26
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          27
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          28
+        )
+        ">
+Theorem pushINVARIANT1 : forall n :nat, forall ns : NatStack, pop (push n ns) = ns.</span><span class="command" onmouseover="
+        mouseover(
+          29
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          30
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          31
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          32
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          33
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          34
+        )
+        ">
+
+
+Theorem popPost1 : forall ns:NatStack, ns &lt;&gt;Empty -&gt; size ns = S (size (pop ns)).</span><span class="command" onmouseover="
+        mouseover(
+          35
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          36
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          37
+        )
+        "> induction ns.</span><span class="command" onmouseover="
+        mouseover(
+          38
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          39
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          40
+        )
+        ">
+    simpl.</span><span class="command" onmouseover="
+        mouseover(
+          41
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          42
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          43
+        )
+        ">
+Theorem popPost2 : forall ns:NatStack, forall n:nat, top ns = Value n &lt;-&gt; Value n = top (pop (push n ns)).</span><span class="command" onmouseover="
+        mouseover(
+          44
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          45
+        )
+        ">  split.</span><span class="command" onmouseover="
+        mouseover(
+          46
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          47
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          48
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          49
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          50
+        )
+        "> 
+         simpl.</span><span class="command" onmouseover="
+        mouseover(
+          51
+        )
+        "> symmetry.</span><span class="command" onmouseover="
+        mouseover(
+          52
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          53
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          54
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          55
+        )
+        ">
+Theorem popINVARIANT1: forall n : nat, forall ns : NatStack, pop (push n ns) = ns.</span><span class="command" onmouseover="
+        mouseover(
+          56
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          57
+        )
+        "> apply pushINVARIANT1.</span><span class="command" onmouseover="
+        mouseover(
+          58
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          59
+        )
+        ">
+
+Theorem topPOST1 : forall ns:NatStack, forall n :nat, top (push n ns) = Value n .</span><span class="command" onmouseover="
+        mouseover(
+          60
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          61
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          62
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          63
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          64
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          65
+        )
+        ">
+Theorem topINVARIANT1 : forall ns:NatStack, forall n : nat, (top (push n ns)) = Value n -&gt; ns = ns.</span><span class="command" onmouseover="
+        mouseover(
+          66
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          67
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          68
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          69
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          70
+        )
+        ">
+
+Theorem isEmptyPOST1 : forall s : NatStack, isEmpty s = true &lt;-&gt; s = Empty.</span><span class="command" onmouseover="
+        mouseover(
+          71
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          72
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          73
+        )
+        "> split.</span><span class="command" onmouseover="
+        mouseover(
+          74
+        )
+        "> induction s.</span><span class="command" onmouseover="
+        mouseover(
+          75
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          76
+        )
+        "> symmetry.</span><span class="command" onmouseover="
+        mouseover(
+          77
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          78
+        )
+        "> 
+simpl.</span><span class="command" onmouseover="
+        mouseover(
+          79
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          80
+        )
+        ">
+intros.</span><span class="command" onmouseover="
+        mouseover(
+          81
+        )
+        "> rewrite H.</span><span class="command" onmouseover="
+        mouseover(
+          82
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          83
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          84
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          85
+        )
+        "> 
+Theorem isEmptyPOST2 : forall s : NatStack, isEmpty s = false &lt;-&gt; s &lt;&gt; Empty.</span><span class="command" onmouseover="
+        mouseover(
+          86
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          87
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          88
+        )
+        "> split.</span><span class="command" onmouseover="
+        mouseover(
+          89
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          90
+        )
+        "> destruct s.</span><span class="command" onmouseover="
+        mouseover(
+          91
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          92
+        )
+        ">
+simpl.</span><span class="command" onmouseover="
+        mouseover(
+          93
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          94
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          95
+        )
+        "> unfold isEmpty.</span><span class="command" onmouseover="
+        mouseover(
+          96
+        )
+        "> destruct s.</span><span class="command" onmouseover="
+        mouseover(
+          97
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          98
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          99
+        )
+        "> 
+reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          100
+        )
+        ">  Qed.</span><span class="command" onmouseover="
+        mouseover(
+          101
+        )
+        "> 
+Theorem isEmptyINVARIANT1 : forall s : NatStack, isEmpty s = true /\ isEmpty s = false -&gt; s = s.</span><span class="command" onmouseover="
+        mouseover(
+          102
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          103
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          104
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          105
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          106
+        )
+        "> 
+
+Definition s1 := push 1 (push 2 (push 3 Empty)).</span><span class="command" onmouseover="
+        mouseover(
+          107
+        )
+        ">
+Definition emp := Empty .</span><span class="command" onmouseover="
+        mouseover(
+          108
+        )
+        ">
+
+Eval compute in pop ( s1).</span><span class="command" onmouseover="
+        mouseover(
+          109
+        )
+        ">
+Eval compute in pop (pop s1).</span><span class="command" onmouseover="
+        mouseover(
+          110
+        )
+        ">
+Eval compute in pop (pop (pop s1)).</span><span class="command" onmouseover="
+        mouseover(
+          111
+        )
+        ">
+Eval compute in pop (pop (pop (pop s1))).</span><span class="command" onmouseover="
+        mouseover(
+          112
+        )
+        ">
+
+
+End problem1.</span><span class="command" onmouseover="
+        mouseover(
+          113
+        )
+        "> 
+
+
+Module problem2.</span><span class="command" onmouseover="
+        mouseover(
+          114
+        )
+        "> 
+
+Inductive SC (T :Type): Type :=
+| Value : T -&gt; SC T
+| Unknown : SC T.</span><span class="command" onmouseover="
+        mouseover(
+          115
+        )
+        ">
+
+Inductive Stack (T:Type) : Type :=
+| Empty : Stack T
+| Add : T -&gt; Stack T -&gt; Stack T.</span><span class="command" onmouseover="
+        mouseover(
+          116
+        )
+        ">
+
+Eval compute in Add nat 4 (Empty nat).</span><span class="command" onmouseover="
+        mouseover(
+          117
+        )
+        ">
+
+
+Definition push {T:Type} (t:T) (st : Stack T) : Stack T:=
+   Add T t st.</span><span class="command" onmouseover="
+        mouseover(
+          118
+        )
+        ">
+
+Definition pop {T:Type} (s : Stack T) : Stack T :=
+   match s with
+    | Empty =&gt; Empty T 
+    | Add _ s' =&gt; s' 
+   end.</span><span class="command" onmouseover="
+        mouseover(
+          119
+        )
+        ">
+
+Definition top {T:Type} (s:Stack T): SC T :=
+   match s with 
+    | Empty =&gt; Unknown T
+    | Add x _ =&gt; Value T x
+   end.</span><span class="command" onmouseover="
+        mouseover(
+          120
+        )
+        "> 
+
+Definition isEmpty {T:Type} (s : Stack T) : bool :=
+   match s with 
+    | Empty =&gt; true
+    | Add _ _ =&gt; false
+   end.</span><span class="command" onmouseover="
+        mouseover(
+          121
+        )
+        ">
+
+Theorem pushPOST1 : forall (T:Type), forall t :T, forall s:Stack T, push t s &lt;&gt; Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          122
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          123
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          124
+        )
+        "> unfold push.</span><span class="command" onmouseover="
+        mouseover(
+          125
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          126
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          127
+        )
+        ">
+Theorem pushPOST2 : forall (T:Type), forall t : T, forall s: Stack T, top (push t s) = Value T t.</span><span class="command" onmouseover="
+        mouseover(
+          128
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          129
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          130
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          131
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          132
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          133
+        )
+        ">
+Theorem pushINVARIANT1 : forall (T:Type), forall t :T, forall s : Stack T, pop (push t s) = s.</span><span class="command" onmouseover="
+        mouseover(
+          134
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          135
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          136
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          137
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          138
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          139
+        )
+        ">
+
+
+Fixpoint size {T:Type} (s:Stack T) : nat :=
+  match s with 
+    | Empty =&gt; O
+    | Add _ ns' =&gt; S (size ns')
+  end.</span><span class="command" onmouseover="
+        mouseover(
+          140
+        )
+        ">
+
+Theorem popPost1 : forall T:Type, forall t:T, forall s: Stack T, s &lt;&gt;Empty T -&gt; size s = S (size (pop s)).</span><span class="command" onmouseover="
+        mouseover(
+          141
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          142
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          143
+        )
+        "> induction s.</span><span class="command" onmouseover="
+        mouseover(
+          144
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          145
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          146
+        )
+        ">
+    simpl.</span><span class="command" onmouseover="
+        mouseover(
+          147
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          148
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          149
+        )
+        ">
+Theorem popPost2 : forall T:Type, forall t:T, forall s:Stack T, top s = Value T t &lt;-&gt; Value T t = top (pop (push t s)).</span><span class="command" onmouseover="
+        mouseover(
+          150
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          151
+        )
+        ">  split.</span><span class="command" onmouseover="
+        mouseover(
+          152
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          153
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          154
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          155
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          156
+        )
+        "> 
+         simpl.</span><span class="command" onmouseover="
+        mouseover(
+          157
+        )
+        "> symmetry.</span><span class="command" onmouseover="
+        mouseover(
+          158
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          159
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          160
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          161
+        )
+        ">
+Theorem popINVARIANT1: forall T:Type, forall t : T, forall s : Stack T, pop (push t s) = s.</span><span class="command" onmouseover="
+        mouseover(
+          162
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          163
+        )
+        "> apply pushINVARIANT1.</span><span class="command" onmouseover="
+        mouseover(
+          164
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          165
+        )
+        ">
+
+Theorem topPOST1 : forall T:Type, forall s:Stack T,  forall t :T, top (push t s) = Value T t .</span><span class="command" onmouseover="
+        mouseover(
+          166
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          167
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          168
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          169
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          170
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          171
+        )
+        ">
+Theorem topINVARIANT1 : forall T:Type, forall s:Stack T, forall t : T, (top (push t s)) = Value T t -&gt; s = s.</span><span class="command" onmouseover="
+        mouseover(
+          172
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          173
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          174
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          175
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          176
+        )
+        ">
+
+Theorem isEmptyPOST1 : forall T : Type, 
+                       forall s : Stack T, 
+                       isEmpty s = true &lt;-&gt; s = Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          177
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          178
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          179
+        )
+        "> split.</span><span class="command" onmouseover="
+        mouseover(
+          180
+        )
+        "> induction s.</span><span class="command" onmouseover="
+        mouseover(
+          181
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          182
+        )
+        "> symmetry.</span><span class="command" onmouseover="
+        mouseover(
+          183
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          184
+        )
+        "> 
+simpl.</span><span class="command" onmouseover="
+        mouseover(
+          185
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          186
+        )
+        ">
+intros.</span><span class="command" onmouseover="
+        mouseover(
+          187
+        )
+        "> rewrite H.</span><span class="command" onmouseover="
+        mouseover(
+          188
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          189
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          190
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          191
+        )
+        "> 
+Theorem isEmptyPOST2 : forall T : Type,
+                       forall s : Stack T, 
+                       isEmpty s = false &lt;-&gt; s &lt;&gt; Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          192
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          193
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          194
+        )
+        "> split.</span><span class="command" onmouseover="
+        mouseover(
+          195
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          196
+        )
+        "> destruct s.</span><span class="command" onmouseover="
+        mouseover(
+          197
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          198
+        )
+        ">
+simpl.</span><span class="command" onmouseover="
+        mouseover(
+          199
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          200
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          201
+        )
+        "> unfold isEmpty.</span><span class="command" onmouseover="
+        mouseover(
+          202
+        )
+        "> destruct s.</span><span class="command" onmouseover="
+        mouseover(
+          203
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          204
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          205
+        )
+        "> 
+reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          206
+        )
+        ">  Qed.</span><span class="command" onmouseover="
+        mouseover(
+          207
+        )
+        "> 
+Theorem isEmptyINVARIANT1 : forall T: Type, 
+                            forall s : Stack T, 
+                            isEmpty s = true /\ isEmpty s = false -&gt; s = s.</span><span class="command" onmouseover="
+        mouseover(
+          208
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          209
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          210
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          211
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          212
+        )
+        "> 
+(*3*)</span><span class="command" onmouseover="
+        mouseover(
+          213
+        )
+        "> 
+Example prob2_3 : forall T:Type, forall x y : T, (pop (pop (push y (push x (Empty T))))) = Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          214
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          215
+        )
+        ">  intros.</span><span class="command" onmouseover="
+        mouseover(
+          216
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          217
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          218
+        )
+        "> Defined.</span><span class="command" onmouseover="
+        mouseover(
+          219
+        )
+        ">
+(* the two pops come after 2 pushes, so we have never "reached too far". We end up with the empty stack that was our base.*)</span><span class="command" onmouseover="
+        mouseover(
+          220
+        )
+        ">
+Example prob2_4 : forall T:Type, forall x: T, (pop (pop (push x (Empty T)))) = Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          221
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          222
+        )
+        ">  intros.</span><span class="command" onmouseover="
+        mouseover(
+          223
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          224
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          225
+        )
+        "> Defined.</span><span class="command" onmouseover="
+        mouseover(
+          226
+        )
+        ">
+(* We have defined pop such that popping the empty stack will simply result in another
+   empty stack. This is not safe becase we have allowed for an implementer to call pop
+   on an empty stack without conveying the information that the stack was already empty.
+   Basically, if your code ever calls pop on empty, you screwed up somewhere, and right
+   now our implementation is totally cool with you calling pop on empty-- I'll just give
+   you another empty. *)</span><span class="command" onmouseover="
+        mouseover(
+          227
+        )
+        ">
+End problem2.</span><span class="command" onmouseover="
+        mouseover(
+          228
+        )
+        "> 
+
+
+Module problem3.</span><span class="command" onmouseover="
+        mouseover(
+          229
+        )
+        "> 
+
+Inductive Stack (T:Type) : Type :=
+| Empty : Stack T
+| Add : T -&gt; Stack T -&gt; Stack T.</span><span class="command" onmouseover="
+        mouseover(
+          230
+        )
+        ">
+
+Definition push {T:Type} (t:T) (st : Stack T) : Stack T:=
+   Add T t st.</span><span class="command" onmouseover="
+        mouseover(
+          231
+        )
+        ">
+
+Locate "{ _ : _ | _ }".</span><span class="command" onmouseover="
+        mouseover(
+          232
+        )
+        ">
+(*
+
+Definition pop {T:Type} (s : Stack T) (p : s &lt;&gt; (Empty T)) : s' : Stack T.
+Proof. destruct s as [|e s']. elim p.  reflexivity.   exact (s'). Defined.
+*)</span><span class="command" onmouseover="
+        mouseover(
+          233
+        )
+        ">
+Definition pop {T:Type} (s : Stack T) (p : s &lt;&gt; (Empty T)) : { s' : Stack T | exists x : T, s= Add T x s'}.</span><span class="command" onmouseover="
+        mouseover(
+          234
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          235
+        )
+        "> destruct s as [|e s'].</span><span class="command" onmouseover="
+        mouseover(
+          236
+        )
+        "> elim p.</span><span class="command" onmouseover="
+        mouseover(
+          237
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          238
+        )
+        "> exists s'.</span><span class="command" onmouseover="
+        mouseover(
+          239
+        )
+        ">  exists e.</span><span class="command" onmouseover="
+        mouseover(
+          240
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          241
+        )
+        "> Defined.</span><span class="command" onmouseover="
+        mouseover(
+          242
+        )
+        ">
+
+
+Definition top {T:Type} (s:Stack T) (p:s &lt;&gt; Empty T): { t : T | exists s', s = Add T t s'}.</span><span class="command" onmouseover="
+        mouseover(
+          243
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          244
+        )
+        "> destruct s.</span><span class="command" onmouseover="
+        mouseover(
+          245
+        )
+        "> elim p.</span><span class="command" onmouseover="
+        mouseover(
+          246
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          247
+        )
+        "> exists t.</span><span class="command" onmouseover="
+        mouseover(
+          248
+        )
+        "> exists s.</span><span class="command" onmouseover="
+        mouseover(
+          249
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          250
+        )
+        "> Defined.</span><span class="command" onmouseover="
+        mouseover(
+          251
+        )
+        ">
+
+Definition s1 := (Add nat 3 (Empty nat)).</span><span class="command" onmouseover="
+        mouseover(
+          252
+        )
+        ">
+Definition s1p : s1 &lt;&gt; Empty nat.</span><span class="command" onmouseover="
+        mouseover(
+          253
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          254
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          255
+        )
+        "> Defined.</span><span class="command" onmouseover="
+        mouseover(
+          256
+        )
+        ">
+
+Eval compute in top s1 s1p.</span><span class="command" onmouseover="
+        mouseover(
+          257
+        )
+        ">
+
+Definition isEmpty {T:Type} (s : Stack T) : bool :=
+   match s with 
+    | Empty =&gt; true
+    | Add _ _ =&gt; false
+   end.</span><span class="command" onmouseover="
+        mouseover(
+          258
+        )
+        ">
+
+
+Theorem pushPOST1 : forall (T:Type), forall t :T, forall s:Stack T, push t s &lt;&gt; Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          259
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          260
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          261
+        )
+        "> unfold push.</span><span class="command" onmouseover="
+        mouseover(
+          262
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          263
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          264
+        )
+        ">
+
+Theorem pushPOST2 : forall (T:Type), forall t : T, forall s: Stack T, forall p : (push t s) &lt;&gt; Empty T, proj1_sig (top (push t s) p) = t.</span><span class="command" onmouseover="
+        mouseover(
+          265
+        )
+        ">   
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          266
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          267
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          268
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          269
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          270
+        )
+        ">
+
+Theorem pushINVARIANT1 : forall (T:Type), forall t :T, forall s : Stack T,forall p : (push t s) &lt;&gt; Empty T, proj1_sig (pop (push t s) p)= s.</span><span class="command" onmouseover="
+        mouseover(
+          271
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          272
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          273
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          274
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          275
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          276
+        )
+        ">
+
+
+Fixpoint size {T:Type} (s:Stack T) : nat :=
+  match s with 
+    | Empty =&gt; O
+    | Add _ ns' =&gt; S (size ns')
+  end.</span><span class="command" onmouseover="
+        mouseover(
+          277
+        )
+        ">
+
+
+Theorem popPost1 : forall T:Type, forall t:T, forall s: Stack T, forall p : (s) &lt;&gt; Empty T, size s = S (size (proj1_sig (pop s p))).</span><span class="command" onmouseover="
+        mouseover(
+          278
+        )
+        ">
+  Proof.</span><span class="command" onmouseover="
+        mouseover(
+          279
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          280
+        )
+        ">  induction s.</span><span class="command" onmouseover="
+        mouseover(
+          281
+        )
+        "> elim p.</span><span class="command" onmouseover="
+        mouseover(
+          282
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          283
+        )
+        ">
+    simpl.</span><span class="command" onmouseover="
+        mouseover(
+          284
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          285
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          286
+        )
+        ">
+
+Theorem popPost2 : forall T:Type, 
+                   forall t:T, 
+                   forall s:Stack T,
+                   forall p : (push t s) &lt;&gt; Empty T,
+                   forall p2 : (s) &lt;&gt; Empty T,     
+                   proj1_sig (top s p2) = t &lt;-&gt;  t = proj1_sig ( top (proj1_sig (pop (push t s) p)) p2).</span><span class="command" onmouseover="
+        mouseover(
+          287
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          288
+        )
+        ">  split.</span><span class="command" onmouseover="
+        mouseover(
+          289
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          290
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          291
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          292
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          293
+        )
+        "> 
+         simpl.</span><span class="command" onmouseover="
+        mouseover(
+          294
+        )
+        "> symmetry.</span><span class="command" onmouseover="
+        mouseover(
+          295
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          296
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          297
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          298
+        )
+        ">
+Theorem popINVARIANT1: forall T:Type, 
+                       forall t : T, 
+                       forall s : Stack T, 
+                       forall p : (push t s) &lt;&gt; Empty T,
+                       proj1_sig (pop (push t s) p) = s.</span><span class="command" onmouseover="
+        mouseover(
+          299
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          300
+        )
+        "> apply pushINVARIANT1.</span><span class="command" onmouseover="
+        mouseover(
+          301
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          302
+        )
+        ">
+
+Theorem topPOST1 : forall T:Type, 
+                   forall s:Stack T,  
+                   forall t :T, 
+                   forall p : (push t s) &lt;&gt; Empty T, 
+                   proj1_sig (top (push t s) p )= t .</span><span class="command" onmouseover="
+        mouseover(
+          303
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          304
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          305
+        )
+        "> simpl.</span><span class="command" onmouseover="
+        mouseover(
+          306
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          307
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          308
+        )
+        ">
+
+Theorem topINVARIANT1 : forall T:Type, 
+                        forall s:Stack T, 
+                        forall t : T, 
+                        forall p : (push t s) &lt;&gt; Empty T,
+                        proj1_sig((top (push t s)) p) = t -&gt; s = s.</span><span class="command" onmouseover="
+        mouseover(
+          309
+        )
+        ">
+ Proof.</span><span class="command" onmouseover="
+        mouseover(
+          310
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          311
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          312
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          313
+        )
+        ">
+
+Theorem isEmptyPOST1 : forall T : Type, 
+                       forall s : Stack T, 
+                       isEmpty s = true &lt;-&gt; s = Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          314
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          315
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          316
+        )
+        "> split.</span><span class="command" onmouseover="
+        mouseover(
+          317
+        )
+        "> induction s.</span><span class="command" onmouseover="
+        mouseover(
+          318
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          319
+        )
+        "> symmetry.</span><span class="command" onmouseover="
+        mouseover(
+          320
+        )
+        "> reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          321
+        )
+        "> 
+simpl.</span><span class="command" onmouseover="
+        mouseover(
+          322
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          323
+        )
+        ">
+intros.</span><span class="command" onmouseover="
+        mouseover(
+          324
+        )
+        "> rewrite H.</span><span class="command" onmouseover="
+        mouseover(
+          325
+        )
+        ">  simpl.</span><span class="command" onmouseover="
+        mouseover(
+          326
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          327
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          328
+        )
+        "> 
+Theorem isEmptyPOST2 : forall T : Type,
+                       forall s : Stack T, 
+                       isEmpty s = false &lt;-&gt; s &lt;&gt; Empty T.</span><span class="command" onmouseover="
+        mouseover(
+          329
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          330
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          331
+        )
+        "> split.</span><span class="command" onmouseover="
+        mouseover(
+          332
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          333
+        )
+        "> destruct s.</span><span class="command" onmouseover="
+        mouseover(
+          334
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          335
+        )
+        ">
+simpl.</span><span class="command" onmouseover="
+        mouseover(
+          336
+        )
+        "> discriminate.</span><span class="command" onmouseover="
+        mouseover(
+          337
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          338
+        )
+        "> unfold isEmpty.</span><span class="command" onmouseover="
+        mouseover(
+          339
+        )
+        "> destruct s.</span><span class="command" onmouseover="
+        mouseover(
+          340
+        )
+        "> elim H.</span><span class="command" onmouseover="
+        mouseover(
+          341
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          342
+        )
+        "> 
+reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          343
+        )
+        ">  Qed.</span><span class="command" onmouseover="
+        mouseover(
+          344
+        )
+        "> 
+Theorem isEmptyINVARIANT1 : forall T: Type, 
+                            forall s : Stack T, 
+                            isEmpty s = true /\ isEmpty s = false -&gt; s = s.</span><span class="command" onmouseover="
+        mouseover(
+          345
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          346
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          347
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          348
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          349
+        )
+        "> 
+
+Definition constructable (T:Type) (s :Stack T) : Prop := True.</span><span class="command" onmouseover="
+        mouseover(
+          350
+        )
+        ">
+ 
+
+Example neverEver : forall T:Type,
+                    forall x : T,
+                    forall s: Stack T,
+                    forall p1 : (push x (Empty T)) &lt;&gt; Empty T,
+                    forall p2 : proj1_sig (pop (push x (Empty T)) p1) &lt;&gt; Empty T,
+                    (constructable T (proj1_sig((pop (proj1_sig (pop (push x (Empty T)) p1)) p2)))) -&gt; False .</span><span class="command" onmouseover="
+        mouseover(
+          351
+        )
+        ">
+Proof.</span><span class="command" onmouseover="
+        mouseover(
+          352
+        )
+        "> intros.</span><span class="command" onmouseover="
+        mouseover(
+          353
+        )
+        "> simpl in p2.</span><span class="command" onmouseover="
+        mouseover(
+          354
+        )
+        ">  elim p2.</span><span class="command" onmouseover="
+        mouseover(
+          355
+        )
+        ">  reflexivity.</span><span class="command" onmouseover="
+        mouseover(
+          356
+        )
+        "> Qed.</span><span class="command" onmouseover="
+        mouseover(
+          357
+        )
+        ">
+
+(* The above proves that calling (pop (pop (push x (Empty T)))) is an impossible term
+   to construct. Mainly, note that it needs a proof of the type of 'p2', which simplifes to 
+   proving that Empty &lt;&gt; Empty. If you can do that, you've successfully proven False.
+   To summarize, the above example shows that constructing a term of the form (pop (pop push _ empty)))
+   implies False, an impossibility. *)</span><span class="command" onmouseover="
+        mouseover(
+          358
+        )
+        ">
+
+
+
+End problem3.</span><span class="command" onmouseover="
+        mouseover(
+          359
+        )
+        ">
+   
+
+Extraction Language Haskell.</span><span class="command" onmouseover="
+        mouseover(
+          360
+        )
+        ">
+Extraction "problem3_subsetTypes.hs" problem3.</span><span class="command" onmouseover="
+        mouseover(
+          361
+        )
+        ">
+(*Extraction "stackExample.hs" problem3.top problem3.pop problem3.isEmpty problem3.push. *)</span></pre></div>
+<div id="goal" class="goal"><pre><span></span></pre></div>
+</body>
+</html>
