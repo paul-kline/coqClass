@@ -265,13 +265,13 @@ Definition isEmpty {T:Type} (s : Stack T) : bool :=
 
 Theorem pushPOST1 : forall (T:Type), forall t :T, forall s:Stack T, push t s <> Empty T.
   Proof. intros. unfold push. discriminate. Qed.
-(*
-Theorem pushPOST2 : forall (T:Type), forall t : T, forall s: Stack T, forall p : (push t s) <> Empty T, top (push t s) p =  t .
+
+Theorem pushPOST2 : forall (T:Type), forall t : T, forall s: Stack T, forall p : (push t s) <> Empty T, proj1_sig (top (push t s) p) = t.   
   Proof. intros.  simpl. reflexivity. Qed.
 
-Theorem pushINVARIANT1 : forall (T:Type), forall t :T, forall s : Stack T,forall p : (push t s) <> Empty T, pop (push t s) p= s.
+Theorem pushINVARIANT1 : forall (T:Type), forall t :T, forall s : Stack T,forall p : (push t s) <> Empty T, proj1_sig (pop (push t s) p)= s.
   Proof. intros.  simpl. reflexivity. Qed.
-*)
+
 
 Fixpoint size {T:Type} (s:Stack T) : nat :=
   match s with 
@@ -279,9 +279,9 @@ Fixpoint size {T:Type} (s:Stack T) : nat :=
     | Add _ ns' => S (size ns')
   end.
 
-(*
-Theorem popPost1 : forall T:Type, forall t:T, forall s: Stack T, forall p : (s) <> Empty T, size s = S (size (pop s p)).
-  Proof. intros. induction s. elim p. reflexivity.
+
+Theorem popPost1 : forall T:Type, forall t:T, forall s: Stack T, forall p : (s) <> Empty T, size s = S (size (proj1_sig (pop s p))).
+  Proof. intros.  induction s. elim p. reflexivity.
     simpl. reflexivity. Qed.
 
 Theorem popPost2 : forall T:Type, 
@@ -289,30 +289,30 @@ Theorem popPost2 : forall T:Type,
                    forall s:Stack T,
                    forall p : (push t s) <> Empty T,
                    forall p2 : (s) <> Empty T,     
-                   top s p2 = t <->  t = top (pop (push t s) p) p2.
+                   proj1_sig (top s p2) = t <->  t = proj1_sig ( top (proj1_sig (pop (push t s) p)) p2).
  Proof.  split. simpl. intros. elim H. reflexivity. 
          simpl. symmetry. elim H. reflexivity. Qed.
 Theorem popINVARIANT1: forall T:Type, 
                        forall t : T, 
                        forall s : Stack T, 
                        forall p : (push t s) <> Empty T,
-                       pop (push t s) p = s.
+                       proj1_sig (pop (push t s) p) = s.
  Proof. apply pushINVARIANT1. Qed.
 
 Theorem topPOST1 : forall T:Type, 
                    forall s:Stack T,  
                    forall t :T, 
                    forall p : (push t s) <> Empty T, 
-                   top (push t s) p = t .
+                   proj1_sig (top (push t s) p )= t .
  Proof. intros. simpl. reflexivity. Qed.
 
 Theorem topINVARIANT1 : forall T:Type, 
                         forall s:Stack T, 
                         forall t : T, 
                         forall p : (push t s) <> Empty T,
-                        (top (push t s)) p = t -> s = s.
+                        proj1_sig((top (push t s)) p) = t -> s = s.
  Proof. intros. reflexivity. Qed.
-*)
+
 Theorem isEmptyPOST1 : forall T : Type, 
                        forall s : Stack T, 
                        isEmpty s = true <-> s = Empty T.
@@ -332,15 +332,15 @@ Proof. intros.  reflexivity. Qed.
 
 Definition constructable (T:Type) (s :Stack T) : Prop := True.
  
-(*
+
 Example neverEver : forall T:Type,
                     forall x : T,
                     forall s: Stack T,
                     forall p1 : (push x (Empty T)) <> Empty T,
-                    forall p2 : pop (push x (Empty T)) p1 <> Empty T,
-                    (constructable T (pop (pop (push x (Empty T)) p1) p2)) -> False.
+                    forall p2 : proj1_sig (pop (push x (Empty T)) p1) <> Empty T,
+                    (constructable T (proj1_sig((pop (proj1_sig (pop (push x (Empty T)) p1)) p2)))) -> False .
 Proof. intros. simpl in p2.  elim p2.  reflexivity. Qed.
-*)
+
 (* The above proves that calling (pop (pop (push x (Empty T)))) is an impossible term
    to construct. Mainly, note that it needs a proof of the type of 'p2', which simplifes to 
    proving that Empty <> Empty. If you can do that, you've successfully proven False.
