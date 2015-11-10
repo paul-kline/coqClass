@@ -237,11 +237,18 @@ Inductive Stack (T:Type) : Type :=
 Definition push {T:Type} (t:T) (st : Stack T) : Stack T:=
    Add T t st.
 
-Definition pop {T:Type} (s : Stack T) (p : s <> (Empty T)) : Stack T.
-Proof. destruct s as [|e s']. elim p.  reflexivity.  exact (s'). Defined.
+Locate "{ _ : _ | _ }".
+(*
 
-Definition top {T:Type} (s:Stack T) (p:s <> Empty T): T.
-Proof. destruct s. elim p. reflexivity. exact t. Defined.
+Definition pop {T:Type} (s : Stack T) (p : s <> (Empty T)) : s' : Stack T.
+Proof. destruct s as [|e s']. elim p.  reflexivity.   exact (s'). Defined.
+*)
+Definition pop {T:Type} (s : Stack T) (p : s <> (Empty T)) : { s' : Stack T | exists x : T, s= Add T x s'}.
+Proof. destruct s as [|e s']. elim p.  reflexivity. exists s'.  exists e. reflexivity. Defined.
+
+
+Definition top {T:Type} (s:Stack T) (p:s <> Empty T): { t : T | exists s', s = Add T t s'}.
+Proof. destruct s. elim p. reflexivity. exists t. exists s.  reflexivity. Defined.
 
 Definition s1 := (Add nat 3 (Empty nat)).
 Definition s1p : s1 <> Empty nat.
@@ -258,11 +265,13 @@ Definition isEmpty {T:Type} (s : Stack T) : bool :=
 
 Theorem pushPOST1 : forall (T:Type), forall t :T, forall s:Stack T, push t s <> Empty T.
   Proof. intros. unfold push. discriminate. Qed.
-Theorem pushPOST2 : forall (T:Type), forall t : T, forall s: Stack T, forall p : (push t s) <> Empty T, top (push t s) p = t .
-  Proof. intros.  simpl. reflexivity. Qed.
-Theorem pushINVARIANT1 : forall (T:Type), forall t :T, forall s : Stack T,forall p : (push t s) <> Empty T, pop (push t s) p= s.
+(*
+Theorem pushPOST2 : forall (T:Type), forall t : T, forall s: Stack T, forall p : (push t s) <> Empty T, top (push t s) p =  t .
   Proof. intros.  simpl. reflexivity. Qed.
 
+Theorem pushINVARIANT1 : forall (T:Type), forall t :T, forall s : Stack T,forall p : (push t s) <> Empty T, pop (push t s) p= s.
+  Proof. intros.  simpl. reflexivity. Qed.
+*)
 
 Fixpoint size {T:Type} (s:Stack T) : nat :=
   match s with 
@@ -270,9 +279,11 @@ Fixpoint size {T:Type} (s:Stack T) : nat :=
     | Add _ ns' => S (size ns')
   end.
 
+(*
 Theorem popPost1 : forall T:Type, forall t:T, forall s: Stack T, forall p : (s) <> Empty T, size s = S (size (pop s p)).
   Proof. intros. induction s. elim p. reflexivity.
     simpl. reflexivity. Qed.
+
 Theorem popPost2 : forall T:Type, 
                    forall t:T, 
                    forall s:Stack T,
@@ -301,7 +312,7 @@ Theorem topINVARIANT1 : forall T:Type,
                         forall p : (push t s) <> Empty T,
                         (top (push t s)) p = t -> s = s.
  Proof. intros. reflexivity. Qed.
-
+*)
 Theorem isEmptyPOST1 : forall T : Type, 
                        forall s : Stack T, 
                        isEmpty s = true <-> s = Empty T.
@@ -321,6 +332,7 @@ Proof. intros.  reflexivity. Qed.
 
 Definition constructable (T:Type) (s :Stack T) : Prop := True.
  
+(*
 Example neverEver : forall T:Type,
                     forall x : T,
                     forall s: Stack T,
@@ -328,10 +340,18 @@ Example neverEver : forall T:Type,
                     forall p2 : pop (push x (Empty T)) p1 <> Empty T,
                     (constructable T (pop (pop (push x (Empty T)) p1) p2)) -> False.
 Proof. intros. simpl in p2.  elim p2.  reflexivity. Qed.
+*)
 (* The above proves that calling (pop (pop (push x (Empty T)))) is an impossible term
    to construct. Mainly, note that it needs a proof of the type of 'p2', which simplifes to 
    proving that Empty <> Empty. If you can do that, you've successfully proven False.
    To summarize, the above example shows that constructing a term of the form (pop (pop push _ empty)))
    implies False, an impossibility. *)
+
+
+
 End problem3.
    
+
+Extraction Language Haskell.
+Extraction "problem3_subsetTypes.hs" problem3.
+(*Extraction "stackExample.hs" problem3.top problem3.pop problem3.isEmpty problem3.push. *)
